@@ -17,7 +17,7 @@ interface Meeting {
   meeting_date: string;
   meeting_time: string;
   reason: string;
-  status: 'pending' | 'accepted' | 'rejected';
+  status: 'pending' | 'accept' | 'rejected';
   parent_name: string;
 }
 

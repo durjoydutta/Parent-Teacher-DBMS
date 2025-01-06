@@ -91,7 +91,7 @@ export async function getMeetingsByParent(parentId: number) {
   }
 }
 
-export async function updateMeetingStatus(meetingId: number, status: 'accepted' | 'rejected', message?: string) {
+export async function updateMeetingStatus(meetingId: number, status: 'accept' | 'rejected', message?: string) {
   const query = `
     UPDATE meetings 
     SET status = $1, message = $2
